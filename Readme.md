@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nadynn Guțu](https://up.htmlacademy.ru/htmlcss/32/user/1840961).
-* Наставник: `Неизвестно`.
+* Наставник: `Татьяна Симоненко` https://htmlacademy.ru/profile/tatien.
 
 ---
 
