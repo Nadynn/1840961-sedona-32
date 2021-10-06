@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -18,19 +19,19 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <img class="page-header-logo" src="img/logo-header.svg" width="138" height="70" alt="Логотип Седона «City Of Sedona»">
+        <img class="page-header-logo" src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона «City Of Sedona»">
         
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="">
               <span class="visually-hidden">Поиск</span>
-              <img src="img/search-icon.svg" width="18" height="18" alt="search icon">
+              <img src="img/icon-search.svg" width="18" height="18" alt="search icon">
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="">
               <span class="visually-hidden">Избранное</span>
-              <img src="img/favorite-icon.svg" width="18" height="17" alt="favorite icon">
+              <img src="img/icon-favorite.svg" width="18" height="17" alt="favorite icon">
             </a>
           </li>
           <li class="navigation-item">
@@ -40,15 +41,15 @@
       </nav>
     </header>
   <main>
-    <h1 class="visually-hidden"> Седона, туристическии город в штате Аризона</h1>
-    <img class="logo-main" src="img/logo-welcome-to-sedona.svg" width="458" height="352" alt="Логотип Седона «Welcome to the gorgeous Sedona»">
-    <img class="logo-main-background" src="img/background-header.jpg" width="1200" height="485" alt="Mountains of Sedona">
-    
+  <section class="logo-index">
+      <h1 class="visually-hidden"> Седона, туристическии город в штате Аризона</h1>
+      <img class="logo-main" src="img/logo-welcome-to-sedona.svg" width="458" height="352" alt="Логотип Седона «Welcome to the gorgeous Sedona»">
+  </section>
   <section class="about-sedona">
-    <h2>Седона — небольшой городок в Аризоне,  
+    <h2 class="about-sedona-town">Седона — небольшой городок в Аризоне,  
       <br> заслуживающий большего!</h2>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!!</p>
- </section>
+    <p class="see-advantage">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!!</p>
+  </section>
  
  <section class="advantages">
    <h2 class="visually-hidden">Преимущество</h2>
@@ -62,17 +63,17 @@
         <ul class="advantages-list-first">
           <li>
             <img class="advantages-house-icon" src="img/advantages/icon-house.svg" width="75" height="72" alt="house icon">
-            <h3>Жильё</h3>
+            <h3 class="advantages-title">Жильё</h3>
             <p> Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li>
             <img class="advantages-food-icon" src="img/advantages/icon-food.svg" width="74" height="70" alt="food icon">
-            <h3>Еда</h3>
+            <h3 class="advantages-title">Еда</h3>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
             <img class="advantages-present-icon" src="img/advantages/icon-present.svg" width="64" height="76" alt="present icon">
-            <h3>Сувениры</h3>
+            <h3 class="advantages-title">Сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -105,23 +106,23 @@
  </ul>
  </section>
  <section class="search-hotels">
-   <h2>Заинтересовались?</h2>
+   <h2 class="interested">Заинтересовались?</h2>
    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
    <a class="button button-search" href="">ПОИСК ГОСТИНИЦЫ В седоне</a>
  </section>
- <section class="newsletter">
-   <img class="newsletter-background" src="img/background-newslatter.jpg"  width="1200" height="411" alt="Sedona Mountains">
+ <section class="newsletter newsletter-photo"> 
    <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="" method="post">
-      <label class="visually-hidden" for="newsletter-email">Email</label>
-      <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-    <button class="button newsletter-button" type="submit">
-      <span>Подписаться</span>
-    </button>
-  </form>
+        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+        <button class="button button-newsletter" type="submit">
+          <span>Подписаться</span>
+        </button>
+      </form>
  </section>
-   </main>
+</main>
+
    <footer class="page-footer">
      <section class="footer-social">
        <h2 class="visually-hidden">Соц сети</h2>
@@ -129,19 +130,19 @@
          <li class="footer-social-item">
            <a class="buttom" href="">
             <span class="visually-hidden">Twitter</span>
-            <img src="img/footer-social-icons/social-twitter.svg" width="18" height="15" alt="Twitter icon">
+            <img src="img/social-icons/social-twitter.svg" width="18" height="15" alt="Twitter icon">
            </a>
          </li>
          <li class="footer-social-item">
           <a class="buttom" href="">
            <span class="visually-hidden">Facebook</span>
-           <img src="img/footer-social-icons/social-facebook.svg" width="10" height="18" alt="Facebook icon">
+           <img src="img/social-icons/social-facebook.svg" width="10" height="18" alt="Facebook icon">
           </a>
         </li>
         <li class="footer-social-item">
           <a class="buttom" href="">
            <span class="visually-hidden">Youtube</span>
-           <img src="img/footer-social-icons/social-youtube.svg" width="20" height="16" alt="Youtube icon">
+           <img src="img/social-icons/social-youtube.svg" width="20" height="16" alt="Youtube icon">
           </a>
         </li>
        </ul>
@@ -154,7 +155,7 @@
      </section>
      <section class="footer-logo">
        <a class="visually-hidden" href="">.html academy</a>
-       <img src="img/logo-footer.svg" width="115" height="33" alt="Html academy logo">
+       <img src="img/logo-hmlt-academy.svg" width="115" height="33" alt="Html academy logo">
      </section>
    </footer>
   </body>
