@@ -127,8 +127,10 @@
                         <input class="catalog-filter-input" type="number" name="max-price"> до
                     </label>
             </fieldset>
-             <button class="button" type="submit">Применить</button> 
-             <button class="button" type="reset">Сбросить</button>
+            <div class="submit-reset">
+              <button class="button" type="submit">Применить</button> 
+              <button class="button" type="reset">Сбросить</button>
+            </div>
         </form>
         </div>
         <div class="catalog-sorting-column">
@@ -142,15 +144,15 @@
                     <option value="expensive">Сначала дорогое</option>
                 </select>
                 </form>
-                <a class="button buton-sorting buton-first" href="">
+                <a class="button button-sorting button-first" href="">
                     <span class="visually-hidden">Показать карточки</span>
                     <img src="img/filter-mode/filter-mode-tile.svg" width="16" height="14" alt="tile icon">
                 </a> 
-                <a class="button buton-sorting buton-second" href="">
+                <a class="button button-sorting button-second" href="">
                     <span class="visually-hidden">Показать по одному</span>
                     <img src="img/filter-mode/filter-mode-slideshow.svg" width="16" height="14" alt="slideshow icon">
                 </a> 
-                <a class="button buton-sorting buton-third" href="">
+                <a class="button button-sorting button-third chosen" href="">
                     <span class="visually-hidden">Показать список</span>
                     <img src="img/filter-mode/filter-mode-list.svg" width="16" height="14" alt="list icon">
                 </a>
@@ -252,7 +254,8 @@
     </section>
     <section class="newsletter">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-              <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <p>Только полезная информация и никакого спама, 
+                  <br>честное бойскаутское!</p>
                <form class="newsletter-form" action="" method="post">
                <label class="visually-hidden" for="newsletter-email">Email</label>
                <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
