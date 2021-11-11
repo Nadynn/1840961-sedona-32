@@ -10,7 +10,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="">О Седоне</a>
@@ -24,18 +24,20 @@
         <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/>
+                </svg>
               <span class="visually-hidden">Поиск</span>
-              <img src="img/icon-search.svg" width="18" height="18" alt="search icon">
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none"  xmlns="http://www.w3.org/2000/svg"><path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                </svg>
               <span class="visually-hidden">Избранное</span>
-              <img src="img/icon-favorite.svg" width="18" height="17" alt="favorite icon">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button button-navigation" href="">Хочю сюда</a>
+            <a class="button button-navigation" href="">Хочю сюда!</a>
           </li>
         </ul>
       </nav>
@@ -138,23 +140,26 @@
                 <h2 class="total-found">Найдено гостиниц: 38</h2>
                 <form class="sorting-type">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
-                <select class="select-control" id="sorting" name="sorting">
+                <select class="select-type-of-sorting" id="sorting" name="sorting">
                     <option class="cheap">Сначала дешевые</option>
                     <option value="popular">Сначала популярное</option>
                     <option value="expensive">Сначала дорогое</option>
                 </select>
                 </form>
-                <a class="button button-sorting button-first" href="">
+                <a class="button button-sorting button-first" href="" type="button">
                     <span class="visually-hidden">Показать карточки</span>
-                    <img src="img/filter-mode/filter-mode-tile.svg" width="16" height="14" alt="tile icon">
+                    <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
+                    </svg>
                 </a> 
-                <a class="button button-sorting button-second" href="">
+                <a class="button button-sorting button-second" href="" type="button">
                     <span class="visually-hidden">Показать по одному</span>
-                    <img src="img/filter-mode/filter-mode-slideshow.svg" width="16" height="14" alt="slideshow icon">
+                    <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
+                    </svg>
                 </a> 
-                <a class="button button-sorting button-third chosen" href="">
+                <a class="button button-sorting button-third chosen" href="" type="button">
                     <span class="visually-hidden">Показать список</span>
-                    <img src="img/filter-mode/filter-mode-list.svg" width="16" height="14" alt="list icon">
+                    <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
+                    </svg>
                 </a>
             </div>
         <ul class="hotels-list">

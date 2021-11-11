@@ -47,12 +47,10 @@ body {
 .navigation {
     display: flex;
     width: 1200px;
-    height: 65px;
     margin: 0 auto;
 }
 .navigation-list {
     display: flex;
-    height: 65px;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
@@ -61,47 +59,31 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
-
 .navigation-select {
     border-bottom: 2px solid #756257;
 }
 .navigation-list li:nth-child(1) {
     display: inherit;
-    box-sizing: border-box;
     align-items: center;
-    width: 86px;
+    width: 68px;
     height: 65px;
     padding: 0;
     margin-right: 33px;
 }
-.navigation-list li:nth-child(1) .navigation-link{
-    width: 86px;
-}
-
 .navigation-list li:nth-child(2) {
     display: inherit;
     align-items: center;
-    width: 106px;
+    width: 82px;
     height: 65px;
     padding: 0;
     margin-right: 33px;
 }
-
-.navigation-list li:nth-child(2) .navigation-link{
-    width: 106px;
-}
-
 .navigation-list li:nth-child(3) {
     display: inherit;
-    box-sizing: border-box;
     align-items: center;
     padding: 0;
-    width: 111px;
+    width: 93px;
     height: 65px;
-}
-
-.navigation-list li:nth-child(3) .navigation-link{
-    width: 111px;
 }
 
 .page-header-logo {
@@ -127,22 +109,11 @@ body {
     display: block;
     padding: 0;
     font-size: 20px;
-    line-height: 32px;
-    color: black;
+    line-height: 26px;
+    color: inherit;
     background-color: white;
     text-decoration: none;
     text-align: center;
-}
-
-.navigation-link:hover {
-    color: #756257;
-}
-
-.navigation-link:focus {
-    border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
-    outline: none;
 }
 
 .navigation-icon {
@@ -152,12 +123,7 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
-    fill: black;
 }
-
-.navigation-link:hover .navigation-icon {
-    fill: #756257;
-  }
 
 .navigation-user .navigation-link {
     position: relative;
@@ -528,8 +494,8 @@ body {
     color: white;
 }
 .catalog-filter {
-    display: grid;
-    grid-template-columns: 150px 150px 290px 160px;
+    display: flex;
+    justify-content: space-evenly;
     width: 1200px;
     margin-right: 70px;
 }
@@ -561,47 +527,39 @@ body {
 
 .total-found {
     margin-left: 71px;
-    font-weight: 700;
+    margin-right: 192px;
+    font-weight: bold;
     font-size: 30px;
     line-height: 39px;
     color: black;
     background-color: white;
-    text-transform: uppercase;
 }
 
-.select-type-of-sorting {
+.select-control {
     height: 48px;
     width: 287px;
-    margin-left: 192px;
+    margin-right: 81px;
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
     color: black;
     background-color: white;
-    border: 2px solid #E6E6E6;
-    box-sizing: border-box;
-    border-radius: 4px;
 }
 
 .button-sorting {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: ;
     width: 48px;
     height: 48px;
-    border: 3px solid #E6E6E6;
+    border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
     margin-right: 8px;
 }
 
-.button-first {
-    margin-left: 81px;
-}
-
 .chosen {
-    border: 3px solid #000000;
+    border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 4px;
 }
@@ -639,47 +597,45 @@ body {
 }
 
 .hotel-card {
-    display: grid;
-    grid-template-columns: 180px 680px 160px;
-    grid-template-rows: 31px auto 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 180px;
     border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card-link {
     height: 120px;
-    grid-row-start: 1;
-    grid-row-end: 5;
 }
 
 .hotels-list li:first-child {
     border-top: 1px solid #E6E6E6;
 }
 
-.hotel-details {
-    display: grid;
-    grid-template-rows: 31px 110px 37px;
-    width: 320px;
-    height: 120px;
-    padding: 0;
-    margin-left: 37px;
-}
-
 .hotel-card-title {
-    display: grid;
     margin: 0;
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
     color:black;
     background-color: white;
-    text-decoration: none;  
+    text-decoration: none;
+    
+}
+.hotel-details {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 120px;
+    padding: 0;
+    margin-left: 37px;
 }
 
 .type-price-hotel {
-    display: grid;
-   
+    display: flex;
+    flex-direction: row;
 }
+
 .hotel-card-type {
     width: 105px;
     font-size: 18px;
