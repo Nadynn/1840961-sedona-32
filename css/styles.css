@@ -143,7 +143,7 @@ body {
     content: "";
 }
 
-.favourite-nr {
+.favourite-number {
     position: absolute;
     top: 0;
     right: -3px;
@@ -1260,7 +1260,7 @@ body {
     align-items: center;
 }
 
-.select-nr-on-page {
+.select-number-on-page {
     width: 160px;
     height: 48px;
     margin-left: 54px;  
@@ -1542,11 +1542,7 @@ body {
     font-size: 18px;
 
 }
-.choose-nr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .select-details-adult {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
