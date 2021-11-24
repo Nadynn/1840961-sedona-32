@@ -102,28 +102,27 @@
                                 <div class="item-1">
                                     <h3 class="advantages-title-type1">Настоящий городок</h3>
                                     <p>— №1 —</p>
-                                    <p class="advantages-description-small-item">Седона — не аттракцион для туристов, там течёт своя жизнь 
-                                    </p>
+                                    <p class="advantages-description-small-item">Седона — не аттракцион для туристов, там течёт своя жизнь </p>
                                 </div>
                                 <img class="sedona-town" src="img/background-section-1.jpg" width="800" height="384" alt="город Седона.">
                             </div>
                             <ul class="advantages-list-first">
                                 <li>
-                                    <img class="advantages-house-icon" src="img/advantages/icon-house.svg" width="75" height="72" alt="иконка дома.">
+                                    <img class="advantages-icons advantages-house-icon" src="img/advantages/icon-house.svg" width="75" height="72" alt="иконка дома.">
                                     <h3 class="advantages-title-for-first-item">Жильё</h3>
                                     <p class="advantages-list-first-description"> Рекомендуем пожить<br>
                                         в настоящем мотеле,<br>
                                         всё как в кино!</p>
                                 </li>
                                 <li>
-                                    <img class="advantages-food-icon" src="img/advantages/icon-food.svg" width="74" height="70" alt="иконка еды.">
+                                    <img class="advantages-icons advantages-food-icon" src="img/advantages/icon-food.svg" width="74" height="70" alt="иконка еды.">
                                     <h3 class="advantages-title-for-first-item">Еда</h3>
                                     <p class="advantages-list-first-description">Всегда заказывайте <br>
                                         топовый фирменный бургер,<br>
                                         вы не разочаруетесь!</p>
                                 </li>
                                 <li>
-                                    <img class="advantages-present-icon" src="img/advantages/icon-present.svg" width="64" height="76" alt="иконка сувенира.">
+                                    <img class="advantages-icons advantages-present-icon" src="img/advantages/icon-present.svg" width="64" height="76" alt="иконка сувенира.">
                                     <h3 class="advantages-title-for-first-item">Сувениры</h3>
                                     <p class="advantages-list-first-description">Не только китайского, <br>
                                         но и настоящего местного <br>
@@ -135,8 +134,7 @@
                             <div>
                                 <img class="sedona-bridge" src="img/background-section-2.jpg" width="800" height="384" alt="мост дьявола.">
                                 <div class="item-2">
-                                    <h3 class="advantages-title-type2">Там есть мост дьявола
-                                    </h3>
+                                    <h3 class="advantages-title-type2">Там есть мост дьявола</h3>
                                     <p>— №2 —</p>
                                     <p class="advantages-description-small-item">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                                 </div>
@@ -244,7 +242,7 @@
         <div class="modal-container">
             <div class="modal modal-select">
                 <button class="modal-close-button">
-                <span class="visually-hidden">Закрыть.</span>
+                    <span class="visually-hidden">Закрыть.</span>
                 </button>
                 <section class="modal-content">
                     <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -255,17 +253,47 @@
                         <label class="appointment-date-out">Дата выезда:</label>
                         <input class="field-date-out" type="text" id="appointment-date-out" name="appointment-date-out" value="1 сентября 2021">
                         <p class="appointment-info">На эти даты есть свободные номера. Пока есть.</p>
-                        <p class="field-group select-details-adult">
-                            <label class="adult">Взрослые:</label>
+                        <label class="field-group select-adult">Взрослые:</label>
+                        <div class="change-number-of-adult-buttons">
+                            <button class="button change-number change-number-minus" type="button">
+                                <span class="visually-hidden">Уменьшить номер.</span>
+                                    <svg class="icon-minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/>
+                                    </svg>
+                            </button>
                             <input class="select-number-of-adult" type="number" id="adult-number" name="adult-number" value="2">
-                        </p>
-                        <p class="field-group select-details-children">
+                            <button class="button change-number change-number-up" type="button">
+                                <span class="visually-hidden">Увеличить номер.</span>
+                                <svg  class="icon-plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="field-group select-children">
                             <label class="child">Дети:</label>
-                            <button class="info" type="button">
-                            <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                            
+                            <button class="info-children" type="button">
+                                <p class="info-icon">i</p>
+                                <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                                <div class="popover-2 popover-cart-2">
+                                    <div class="popover-content-2">
+                                        <p class="popover-text-2" >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                                    </div>
+                                </div>    
+                            </button>
+                        </div>
+
+                        <div class="change-number-of-child-buttons">
+                            <button class="button change-number change-number-minus" type="button">
+                                <span class="visually-hidden">Уменьшить номер.</span>
+                                <svg class="icon-minus" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/>
+                                </svg>
                             </button>
                             <input class="select-number-of-child" type="number" id="child-number" name="child-number" value="1">
-                        </p>
+                            <button class="button change-number change-number-up" type="button">
+                                <span class="visually-hidden">Увеличить номер.</span>
+                                <svg  class="icon-plus" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/>
+                                </svg>
+                            </button>
+                        </div>
                         <button class="button appointment-submit" type="submit">Найти</button>
                     </form>
                 </section>
