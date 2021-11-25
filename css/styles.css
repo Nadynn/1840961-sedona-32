@@ -1624,6 +1624,7 @@ body {
 
 .popover-title-button:hover {
     background: #615048;
+    outline: transparent;
 }
 
 .popover-title-button:focus {
